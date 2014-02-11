@@ -7,6 +7,8 @@ project(helloros)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
+  std_msgs 
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -81,7 +83,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES helloros
-  CATKIN_DEPENDS roscpp rospy
+  CATKIN_DEPENDS roscpp rospy message_runtime
 #  DEPENDS system_lib
 )
 
